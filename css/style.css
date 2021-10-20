@@ -58,16 +58,6 @@ a:hover {
   text-decoration: underline;
 }
 
-a:visited {
-  /* visited link */
-  color: #ff7f50;
-}
-
-a:active {
-  /* selected link */
-  color: #994c30;
-}
-
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
