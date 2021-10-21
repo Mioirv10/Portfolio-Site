@@ -94,8 +94,7 @@ nav>ul>li {
   padding: 0 15px;
 }
 
-/* Home styling */
-
+/* HOME PAGE styling */
 #home-hero {
   padding-top: 8px;
   padding-bottom: 24px;
@@ -146,16 +145,15 @@ nav>ul>li {
 }
 
 /* Footer Styling */
-
 #contact {
   margin-top: 40px;
   margin-bottom: 20px;
 }
 
 hr {
-width: 150px;
-color: #A4A4A4;
-border-width: 2px;
+  width: 150px;
+  color: #A4A4A4;
+  border-width: 2px;
 }
 
 .contact-copy {
@@ -166,13 +164,13 @@ border-width: 2px;
   text-align: center;
   margin: 0;
   padding: 8px 0;
-  line-height:42px;
+  line-height: 42px;
 }
 
 #contact p {
   text-align: center;
   margin: 0;
-  padding: 8px 0;
+  padding: 16px 0;
 }
 
 .email-button {
@@ -224,4 +222,94 @@ border-width: 2px;
 .copyright {
   font-size: 14px;
   padding: 24px 0;
+}
+
+/* ABOUT PAGE styling */
+#about-intro {
+  margin: 16px 0;
+}
+
+#about-intro h2 {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+#about-intro p {
+  text-align: center;
+  margin: 0;
+}
+
+#about-why-ux {
+  margin: 16px 0;
+  padding: 18px 0;
+
+}
+
+#about-why-ux h2 {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+#about-why-ux p {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+#about-skills-tools h2 {
+  margin: 0;
+  padding-left: 16px;
+}
+
+#about-skills-tools p {
+font-size: 18px;
+line-height: 16px;
+}
+
+.icon-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about-skills-tools ul {
+  padding: 24px 0;
+  margin: 0;
+}
+
+#about-skills-tools ul>li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.skills {
+  margin: 24px 0;
+}
+
+#about-skills-tools img {
+  width: 28px
+}
+
+.tool-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.tool-icon {
+  margin-right: 16px;
+  margin-left: 0;
+}
+
+.rows {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 0;
+}
+
+.column {
+  padding: 0 8px;
 }
