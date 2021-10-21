@@ -16,10 +16,10 @@
 
 <body class="home" id="home">
   <header>
-    <div>
-      <img src="Img/Home/Mio-logo.png" alt="Mio's Logo">
+    <div class="container">
+      <img src="Img/Home/Mio-logo-mark.png" class="logo">
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#Contact">Contact</a></li>
@@ -30,66 +30,70 @@
   <br>
   <!-- The hero section -->
   <div id="home-hero">
-    <div class="row">
-      <div class="column">
-        <picture>
-          <source srcset="Img/Home/Profile-picture.png" media="(max-width:767px)">
-          <img src="Img/Home/Profile-picture.png" alt="My Image">
-        </picture>
-      </div>
-      <div class="column">
-        <h1>Hi, my name is Mio.</h1>
-        <p>I’m a User Experience Designer with an international background and a passion for creative problem-solving.</p>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <picture>
+            <source srcset="Img/Home/Profile-picture.png" media="(max-width:767px)">
+            <img src="Img/Home/Profile-picture.png" alt="My Image">
+          </picture>
+        </div>
+        <div class="column">
+          <h1>Hi, my name is Mio.</h1>
+          <p>I’m a User Experience Designer with an international background and a passion for creative problem-solving.</p>
+        </div>
       </div>
     </div>
   </div>
   <br>
 
-  <div id="home-my-work">
-    <h2>My Work</h2>
-    <!-- work project 1 -->
-    <div>
-      <div>
-        <picture>
-          <source srcset="Img/Home/Project_Patch-app-400px.png" media="(max-width:767px)">
-          <img src="Img/Home/Project_Patch-app-800px.png" alt="My Image">
-        </picture>
+  <div id="home-my-work" class="home-my-work">
+    <div class="container">
+      <h2>My Work</h2>
+      <!-- work project 1 -->
+      <div class="row">
+        <div>
+          <picture>
+            <source srcset="Img/Home/Project_Patch-app-400px.png" media="(max-width:767px)">
+            <img src="Img/Home/Project_Patch-app-800px.png" alt="My Image">
+          </picture>
+        </div>
+        <div>
+          <h3>App for Small Business Owners</h3>
+          <p>An app designed to connect small business owners to seasoned experts for advice on successfully opening and/or running their online shops. Project brief from Careerfoundry.</p>
+        </div>
       </div>
-      <div>
-        <h3>App for Small Business Owners</h3>
-        <p>An app designed to connect small business owners to seasoned experts for advice on successfully opening and/or running their online shops. Project brief from Careerfoundry.</p>
+
+      <!-- work project 2 -->
+      <div class="row">
+        <div>
+          <picture>
+            <source srcset="Img/Home/Project_Polyglo_400px.png" media="(max-width:767px)">
+            <img src="Img/Home/Project_Polyglo_800px.png" alt="My Image">
+          </picture>
+        </div>
+        <div>
+          <h3>Polyglo Branding</h3>
+          <p>Poylglo is an EdTech start-up with the mission of offering parents around the world advice and support in raising their children bilingual / multilingual. </p>
+        </div>
       </div>
-    </div>
-    <br>
-    <!-- work project 2 -->
-    <div>
-      <div>
-        <picture>
-          <source srcset="Img/Home/Project_Polyglo_400px.png" media="(max-width:767px)">
-          <img src="Img/Home/Project_Polyglo_800px.png" alt="My Image">
-        </picture>
+
+      <!-- work project 3 -->
+      <div class="row">
+        <div>
+          <picture>
+            <source srcset="Img/Home/Project_IFS_400px.png" media="(max-width:767px)">
+            <img src="Img/Home/Project_IFS_800px.png" alt="My Image">
+          </picture>
+        </div>
+        <div>
+          <h3>IFS Website</h3>
+          <p>A re-branding and repositioning of an aviation tech company as a young and agile start-up by the name if IFS. A brand new logo, brand guidelines and website was created to reflect internal change. </p>
+        </div>
       </div>
-      <div>
-        <h3>Polyglo Branding</h3>
-        <p>Poylglo is an EdTech start-up with the mission of offering parents around the world advice and support in raising their children bilingual / multilingual. </p>
-      </div>
-    </div>
-    <br>
-    <!-- work project 3 -->
-    <div>
-      <div>
-        <picture>
-          <source srcset="Img/Home/Project_IFS_400px.png" media="(max-width:767px)">
-          <img src="Img/Home/Project_IFS_800px.png" alt="My Image">
-        </picture>
-      </div>
-      <div>
-        <h3>IFS Website</h3>
-        <p>A re-branding and repositioning of an aviation tech company as a young and agile start-up by the name if IFS. A brand new logo, brand guidelines and website was created to reflect internal change. </p>
-      </div>
-      <br>
+
       <!-- work project 4 -->
-      <div>
+      <div class="row">
         <div>
           <picture>
             <source srcset="Img/Home/Project_trivago_400px.png" media="(max-width:767px)">
@@ -104,27 +108,31 @@
       </div>
     </div>
   </div>
-    <br>
 
-    <!-- Footer  -->
-    <footer id="Contact">
-      <div>
-        <hr>
+  <!-- Footer  -->
+  <footer id="contact">
+    <div class="container">
+      <hr>
+      <div class="contact-copy">
         <h2>Get in Touch</h2>
         <p>
-          I'd love to hear from you, whether it's just to say hi or to discuss a project.
+          I'd love to hear from you, whether it's just to say hi or to discuss a project!
         </p>
-        <div>
-          <a href="mailto:mio.irving@hotmail.com" class="button">Email me</a>
-        </div>
-        <br>
-        <div>
-          <!--Social Media links-->
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-instagram"></a>
-          <a href="#" class="fa fa-etsy"></a>
-        </div>
-    </footer>
+      </div>
+      <div class="email-button">
+        <a href="mailto:mio.irving@hotmail.com" class="button">Email me</a>
+      </div>
+      <div class="socials">
+        <!--Social Media links-->
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" class="fa fa-etsy"></a>
+      </div>
+      <div class="copyright">
+        <p>Copyright Mio Irving 2021-2022</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
