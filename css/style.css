@@ -94,7 +94,7 @@ nav>ul>li {
   padding: 0 15px;
 }
 
-/* HOME PAGE styling */
+/* --------------------HOME PAGE styling-------------------- */
 #home-hero {
   padding-top: 8px;
   padding-bottom: 24px;
@@ -224,7 +224,7 @@ hr {
   padding: 24px 0;
 }
 
-/* ABOUT PAGE styling */
+/* --------------------ABOUT PAGE styling-------------------- */
 #about-intro {
   margin: 16px 0;
 }
@@ -243,7 +243,6 @@ hr {
 #about-why-ux {
   margin: 16px 0;
   padding: 18px 0;
-
 }
 
 #about-why-ux h2 {
@@ -264,8 +263,8 @@ hr {
 }
 
 #about-skills-tools p {
-font-size: 18px;
-line-height: 16px;
+  font-size: 18px;
+  line-height: 16px;
 }
 
 .icon-title {
@@ -312,4 +311,45 @@ line-height: 16px;
 
 .column {
   padding: 0 8px;
+}
+
+/* --------------------PATCH PROJECT styling-------------------- */
+
+#work-patch-intro {
+  margin: 24px 0;
+}
+
+#work-patch-intro h2 {
+  text-align: center;
+  margin: 0;
+  line-height: 44px;
+  padding: 8px 0;
+}
+
+#work-patch-intro p {
+  text-align: center;
+  pdding: 16px 0;
+  line-height: 18px;
+line-height: 24px;
+}
+
+.main-title {
+  margin-bottom: 40px;
+}
+
+.project-description {
+  margin: 24px 0;
+}
+
+.sub-head {
+  text-align: center;
+  color: #737373;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-size: 24px
+}
+
+#work-patch-intro div>img {
+  width: 45px;
+  margin-right: 12px;
 }
