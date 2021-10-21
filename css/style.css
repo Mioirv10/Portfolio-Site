@@ -118,6 +118,17 @@ nav>ul>li {
   padding: 16px 0;
 }
 
+#home-hero img {
+  width: 200px;
+  max-width: 200px;
+}
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
 #home-my-work h2 {
   text-align: center;
 }
