@@ -132,7 +132,7 @@ nav>ul>li {
   text-align: center;
 }
 
-.row {
+.my-work-row {
   padding-bottom: 24px;
 }
 
@@ -154,10 +154,6 @@ hr {
   width: 150px;
   color: #A4A4A4;
   border-width: 2px;
-}
-
-.contact-copy {
-  padding: 16px 0;
 }
 
 #contact h2 {
@@ -302,14 +298,14 @@ hr {
   margin-left: 0;
 }
 
-.rows {
+.tool-rows {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 24px 0;
 }
 
-.column {
+.tool-column {
   padding: 0 8px;
 }
 
@@ -349,7 +345,7 @@ line-height: 24px;
   font-size: 24px
 }
 
-#work-patch-intro div>img {
+.icon {
   width: 45px;
   margin-right: 12px;
 }
