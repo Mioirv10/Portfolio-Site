@@ -130,6 +130,7 @@ nav>ul>li {
 
 #home-my-work h2 {
   text-align: center;
+  font-size: 30px;
 }
 
 .my-work-row {
@@ -376,11 +377,24 @@ hr {
 }
 
 .research-interviews {
+  display: flex;
   background-color: #FEF3F1;
   margin-top: -16px;
   padding-top: 20px;
   padding-bottom: 50px;
-  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interview-text {
+  margin-bottom: 60px;
+}
+
+.row-interview {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-columns: 1fr;
+  justify-items: center;
 }
 
 .column-interview {
@@ -389,19 +403,20 @@ hr {
   box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.15);
   width: 80%;
   border-radius: 8px;
-  text-align: center;
 }
 
-.row-interview {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
+#work-patch-empathise ol {
+  padding-left: 30px;
 }
 
 .column-personas {
   box-shadow: 1px 1px 24px 4px rgba(0, 0, 0, 0.15);
   margin: 40px 0;
+}
+
+.grid-container-quotes {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .personas {
@@ -455,12 +470,8 @@ hr {
 }
 
 /* --IDEATE--- */
-
-
 /* --PROTOTYPE--- */
-
 /* --TEST--- */
-
 #usability-tests {
   background-color: #FEF3F1;
   padding: 16px 0;
@@ -473,16 +484,15 @@ hr {
 }
 
 /* --Iterate & Refine--- */
-
 #work-patch-iterate h3 {
   margin-bottom: 8px;
-margin-top: 0;
+  margin-top: 0;
   text-align: center;
 }
 
 #work-patch-iterate h4 {
   margin-bottom: 8px;
-margin-top: 0;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -493,8 +503,8 @@ margin-top: 0;
 }
 
 .amendment-title {
-margin-top: 60px;
-margin-bottom: 24px;
+  margin-top: 60px;
+  margin-bottom: 24px;
 }
 
 .text-1 {
@@ -540,3 +550,192 @@ margin-bottom: 24px;
 .amendment3 {
   margin-bottom: 60px;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+
+  /* -----------General---------- */
+  h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 2.75em;
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1.50em;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-size: 1.13em;
+    font-weight: 400;
+  }
+
+  /* Layout styling */
+  .container {
+    padding: 0 24px;
+  }
+
+  /* -----------Navigation---------- */
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  /* --------------------HOME PAGE styling-------------------- */
+  /* -----------home intro---------- */
+  .hero-row {
+    display: flex;
+    align-items: center;
+  }
+
+  #home-hero h2 {
+    text-align: left;
+    line-height: 48px;
+    margin: 0;
+    padding-top: 16px;
+    padding-left: 30px;
+  }
+
+  #home-hero p {
+    text-align: left;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0;
+    padding: 16px 0;
+    padding-left: 30px;
+  }
+
+  #home-hero {
+    padding-top: 24px;
+    padding-bottom: 60px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* --------------------ABOUT PAGE styling-------------------- */
+  /* -----------about intro---------- */
+  #about-intro img {
+    width: 400px;
+  }
+
+  #about-intro {
+    margin-top: 24px;
+    margin-bottom: 60px;
+  }
+
+  #about-intro h2 {
+    padding-bottom: 18px;
+  }
+
+  .about-text-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* -----------why ux?---------- */
+  #about-why-ux {
+    padding-bottom: 60px;
+  }
+
+  /* -----------skills and tools---------- */
+  .tool-column {
+    padding: 0 24px;
+  }
+
+  .skills {
+    padding-bottom: 40px;
+  }
+
+  .tools {
+    padding-bottom: 60px;
+  }
+
+  /* --------------------PATCH PROJECT styling-------------------- */
+  /* -----------EMPATHISE---------- */
+  .grid-container-quotes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid-item-quote1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .grid-item-quote2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .grid-item-quote3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .grid-item-quote4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .grid-item-quote5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .grid-item-quote6 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .row-interview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-column-gap: 30px;
+    grid-row-gap: 60px;
+  }
+
+/* -----------Define--------- */
+
+  #user-flow-title {
+    background-color: #FEF3F1;
+    display: flex;
+    padding: 24px;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .persona-profile {
+    width: 100px;
+    margin-right: 20px;
+  }
+
+}
+
+/* ==============================
+  Large devices (1024px or larger)
+  ================================= */
+@media only screen and (min-width: 1024px) {}
+
+/* ==============================
+  X-large devices (1440px or larger)
+  ================================= */
+@media only screen and (min-width: 1440px) {}
