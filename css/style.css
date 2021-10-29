@@ -224,7 +224,6 @@ hr {
   text-align: center;
 }
 
-
 /* --------------------ABOUT PAGE styling-------------------- */
 #about-intro {
   margin: 16px 0;
@@ -373,6 +372,7 @@ hr {
   justify-content: center;
   margin-bottom: 16px;
   margin-top: 60px;
+  position: relative;
 }
 
 #process-step-title h2 {
@@ -391,7 +391,7 @@ hr {
 }
 
 .interview-text {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .row-interview {
@@ -399,11 +399,12 @@ hr {
   grid-gap: 16px;
   grid-template-columns: 1fr;
   justify-items: center;
+  padding: 0 16px;
 }
 
 .column-interview {
   display: flex;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.15);
   width: 80%;
   border-radius: 8px;
@@ -474,9 +475,9 @@ hr {
 /* --DEFINE--- */
 .persona-profile {
   width: 100px;
+  padding-right: 16px;
 }
 
-/* --IDEATE--- */
 #user-flow-title {
   background-color: #FEF3F1;
   display: flex;
@@ -485,6 +486,19 @@ hr {
   align-items: center;
 }
 
+.space {
+  background-color: #FEF3F1;
+  height: 30px;
+  margin-top: -40px;
+}
+
+.user-flow-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --IDEATE--- */
 #user-flow-title h3 {
   font-size: 20px;
   margin: 0;
@@ -797,6 +811,10 @@ Medium devices (640px and larger)
 
   /* --------------------PATCH PROJECT styling-------------------- */
   /* -----------EMPATHISE---------- */
+  .research-interviews {
+    padding-top: 40px;
+  }
+
   .grid-container-quotes {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -851,12 +869,12 @@ Medium devices (640px and larger)
 
   .persona-profile {
     width: 100px;
-    margin-right: 20px;
   }
 
   .space {
     background-color: #FEF3F1;
-    height: 0;
+    height: 20px;
+    margin-top: -40px;
   }
 
   .user-flow-title {
@@ -1322,9 +1340,13 @@ Medium devices (640px and larger)
   }
 
   /* -----------DEFINE---------- */
+
   #user-flow-title {
+    display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .space {
@@ -1336,20 +1358,23 @@ Medium devices (640px and larger)
   .user-flow-title {
     background-color: #FEF3F1;
     display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    align-items: center;
+    padding: 0;
   }
 
   .persona-profile {
     width: 100px;
-    margin-right: 20px;
+    margin: 0;
   }
 
   .user-flow-column {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     margin-top: 40px;
     margin-bottom: 60px;
   }
