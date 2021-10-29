@@ -225,15 +225,6 @@ hr {
 }
 
 
-.plane {
-  animation: plane-move;
-  }
-
-  @keyframes plane-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
 /* --------------------ABOUT PAGE styling-------------------- */
 #about-intro {
   margin: 16px 0;
