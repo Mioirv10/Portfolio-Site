@@ -89,6 +89,85 @@ nav>ul>li {
   padding: 0 16px
 }
 
+/* Footer Styling */
+#contact {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+hr {
+  width: 150px;
+  color: #A4A4A4;
+  border-width: 2px;
+}
+
+#contact h2 {
+  text-align: center;
+  margin: 0;
+  padding: 8px 0;
+  line-height: 42px;
+}
+
+#contact p {
+  text-align: center;
+  margin: 0;
+  padding: 16px 0;
+}
+
+.email-button {
+  text-align: center;
+  display: block;
+  padding: 24px 0;
+}
+
+.socials {
+  text-align: center;
+  display: block;
+  padding-top: 20px
+}
+
+.button {
+  background-color: #253165;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s;
+  transition-property: opacity;
+  text-decoration: none
+}
+
+.button:hover {
+  color: #ffffff;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.2s;
+  transition-property: opacity;
+  background: #515A84
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: white;
+}
+
+.copyright {
+  font-size: 14px;
+  padding: 24px 0;
+}
+
 /* Layout styling */
 .container {
   padding: 0 15px;
@@ -145,80 +224,14 @@ nav>ul>li {
   text-align: center;
 }
 
-/* Footer Styling */
-#contact {
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
 
-hr {
-  width: 150px;
-  color: #A4A4A4;
-  border-width: 2px;
-}
+.plane {
+  animation: plane-move;
+  }
 
-#contact h2 {
-  text-align: center;
-  margin: 0;
-  padding: 8px 0;
-  line-height: 42px;
-}
-
-#contact p {
-  text-align: center;
-  margin: 0;
-  padding: 16px 0;
-}
-
-.email-button {
-  text-align: center;
-  display: block;
-  padding: 24px 0;
-}
-
-.socials {
-  text-align: center;
-  display: block;
-  padding-top: 20px
-}
-
-.button {
-  background-color: #253165;
-  color: #ffffff;
-  font-weight: 600;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
-  text-decoration: none
-}
-
-.button:hover {
-  color: #ffffff;
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-.fa {
-  padding: 10px;
-  font-size: 18px;
-  width: 40px;
-  height: 40px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-  background: #515A84
-}
-
-.fa:hover {
-  opacity: 0.7;
-  color: white;
-}
-
-.copyright {
-  font-size: 14px;
-  padding: 24px 0;
+  @keyframes plane-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
 }
 
 /* --------------------ABOUT PAGE styling-------------------- */
@@ -442,6 +455,7 @@ hr {
   width: 100px;
 }
 
+/* --IDEATE--- */
 #user-flow-title {
   background-color: #FEF3F1;
   display: flex;
@@ -469,8 +483,61 @@ hr {
   font-weight: 600;
 }
 
-/* --IDEATE--- */
+#ideate-title {
+  background-color: #FEF3F1;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#ideate-title h3 {
+  margin: 4px 0;
+  text-align: center;
+}
+
+#ideate-title p {
+  margin: 4px 0;
+  text-align: center;
+}
+
+.ideate-title {
+  background-color: #FEF3F1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 20px;
+}
+
 /* --PROTOTYPE--- */
+#prototype-title {
+  background-color: #FEF3F1;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#prototype-title h3 {
+  margin: 4px 0;
+  text-align: center;
+}
+
+#prototype-title p {
+  margin: 4px 0;
+  text-align: center;
+}
+
+.prototype-title {
+  background-color: #FEF3F1;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 20px;
+}
+
 /* --TEST--- */
 #usability-tests {
   background-color: #FEF3F1;
@@ -484,76 +551,115 @@ hr {
 }
 
 /* --Iterate & Refine--- */
-#work-patch-iterate h3 {
-  margin-bottom: 8px;
-  margin-top: 0;
-  text-align: center;
+#iterate-title {
+  background-color: #FEF3F1;
+  display: flex;
+  padding: 0 16px;
 }
 
-#work-patch-iterate h4 {
-  margin-bottom: 8px;
-  margin-top: 0;
-  text-align: center;
+#iterate-title h3 {
+  margin: 4px 0;
 }
 
-#work-patch-iterate p {
-  font-size: 16px;
+#iterate-title p {
+  margin: 4px 0;
+}
+
+.iterate-title {
+  background-color: #FEF3F1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 0;
+}
+
+.amendment-title {
+  margin: 0;
+}
+
+.amendment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.amendment-2 {
+  display: flex;
+  align-items: center;
+}
+
+.text-1 {
   text-align: center;
   margin: 0;
 }
 
-.amendment-title {
-  margin-top: 60px;
-  margin-bottom: 24px;
-}
-
-.text-1 {
+.amendment-2 {
   display: flex;
-  align-items: center;
   flex-direction: column;
-}
-
-.amendment-1 {
-  display: flex;
   align-items: center;
-  flex-direction: column;
-  padding: 0 8px;
 }
 
-.two-amendment-1 {
-  display: flex;
-  align-items: start;
-  margin: 30px 0;
-}
-
-.text-1 {
+#text-2 h4 {
   text-align: center;
 }
 
-.amendment-2 {
-  margin: 30px 0;
+#text-2 p {
+  text-align: center;
 }
 
-.amendment-3 {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 8px;
+.text-3 {
+  text-align: center;
 }
 
-.two-amendment-3 {
-  display: flex;
-  align-items: start;
-  margin: 30px 0;
+/* --Final Presentation--- */
+#final-wireframe {
+  background-color: #FEF3F1;
+  padding-top: 8px;
+  padding-bottom: 60px;
 }
 
-.amendment3 {
+.grid-final-wireframes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 24px 16px;
+}
+
+#final-wireframe h3 {
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+#final-wireframe p {
+  margin: 0;
+}
+
+.final-text {
+  margin-top: 40px;
   margin-bottom: 60px;
 }
 
-/* ==============================
+#final-pres {
+  padding-top: 60px;
+}
+
+#final-pres h3 {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+#final-pres p {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+/* ==============================================================================
 Medium devices (640px and larger)
-================================= */
+================================================================================= */
 @media only screen and (min-width: 640px) {
 
   /* -----------General---------- */
@@ -713,8 +819,7 @@ Medium devices (640px and larger)
     grid-row-gap: 60px;
   }
 
-/* -----------Define--------- */
-
+  /* -----------Define--------- */
   #user-flow-title {
     background-color: #FEF3F1;
     display: flex;
@@ -728,14 +833,702 @@ Medium devices (640px and larger)
     margin-right: 20px;
   }
 
+  .space {
+    background-color: #FEF3F1;
+    height: 0;
+  }
+
+  .user-flow-title {
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* -----------Ideate--------- */
+  #ideate-title {
+    background-color: #FEF3F1;
+    display: flex;
+  }
+
+  #ideate-title h3 {
+    margin: 4px 0;
+    text-align: left;
+  }
+
+  #ideate-title p {
+    margin: 4px 0;
+    text-align: left;
+  }
+
+  .ideate-title {
+    background-color: #FEF3F1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 24px;
+  }
+
+  /* -----------Prototype--------- */
+  #prototype-title {
+    background-color: #FEF3F1;
+    display: flex;
+  }
+
+  #prototype-title h3 {
+    margin: 4px 0;
+    text-align: left;
+  }
+
+  #prototype-title p {
+    margin: 4px 0;
+    text-align: left;
+  }
+
+  .prototype-title {
+    background-color: #FEF3F1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 24px;
+  }
+
+  .amendment-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #text-2 {
+    margin-bottom: 40px;
+  }
+
+  #text-2 h4 {
+    text-align: center;
+  }
+
+  #text-2 p {
+    text-align: center;
+  }
+
+  /* -----------iterate & prototype--------- */
+  #iterate-title {
+    background-color: #FEF3F1;
+    display: flex;
+    padding: 0 24px;
+  }
+
+  #iterate-title h3 {
+    margin: 4px 0;
+    text-align: left;
+  }
+
+  #iterate-title p {
+    margin: 4px 0;
+    text-align: left;
+  }
+
+  .iterate-title {
+    background-color: #FEF3F1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+  }
+
+  .amendment-title {
+    margin: 0;
+  }
+
+  .amendment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+
+  .amendment-2 {
+    display: flex;
+    align-items: center;
+  }
+
+  /* -----------final presentation--------- */
+  #final-wireframe {
+    background-color: #FEF3F1;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  .grid-final-wireframes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px 16px;
+  }
+
+  #final-wireframe h3 {
+    margin: 0;
+    margin-bottom: 4px;
+  }
+
+  #final-wireframe p {
+    margin: 0;
+  }
+
+  .final-text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  #final-pres {
+    padding-top: 60px;
+  }
+
+  #final-pres h3 {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  #final-pres p {
+    margin: 0
+  }
 }
 
-/* ==============================
+/* ==============================================================================
   Large devices (1024px or larger)
-  ================================= */
-@media only screen and (min-width: 1024px) {}
+  ================================================================================= */
+@media only screen and (min-width: 1024px) {
 
-/* ==============================
+  /* Layout styling */
+  .container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Footer styling */
+  hr {
+    width: 150px;
+    color: #A4A4A4;
+    border-width: 2px;
+    margin-bottom: 30px;
+  }
+
+  /* --------------------HOME PAGE styling-------------------- */
+  /* -----------home intro---------- */
+  #home-hero h2 {
+    text-align: left;
+    line-height: 48px;
+    margin: 0 0;
+    padding-bottom: 0;
+    padding-left: 60px;
+  }
+
+  #home-hero p {
+    text-align: left;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0;
+    padding: 8px 0;
+    padding-left: 60px;
+  }
+
+  #home-hero {
+    padding-top: 80px;
+    padding-bottom: 120px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  #home-hero img {
+    width: 300px;
+    max-width: 300px;
+  }
+
+  .profile-pic {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+  }
+
+  /* -----------Work projects---------- */
+  #home-my-work h2 {
+    font-size: 36px;
+  }
+
+  .my-work-column {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    grid-column-gap: 52px;
+    grid-row-gap: 16px;
+  }
+
+  /* --------------------ABOUT PAGE styling-------------------- */
+  /* -----------about intro---------- */
+  .about-text-image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #about-intro {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  #about-intro h2 {
+    text-align: left;
+    padding-bottom: 18px;
+    padding-right: 120px;
+  }
+
+  #about-intro p {
+    text-align: left;
+    padding-right: 120px;
+  }
+
+  #about-intro img {
+    width: 400px;
+  }
+
+  /* -----------why ux?---------- */
+  .why-ux {
+    width: 50%;
+  }
+
+  #about-why-ux h2 {
+    text-align: left;
+  }
+
+  #about-why-ux p {
+    text-align: left;
+  }
+
+  #about-why-ux {
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  /* -----------skills and tools---------- */
+  .tool-rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 24px 0;
+    width: 50%;
+  }
+
+  .skills-tools {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+  }
+
+  .skills {
+    margin: 0;
+    width: 50%;
+  }
+
+  #about-skills-tools img {
+    width: 28px
+  }
+
+  .tools {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .tool-text {
+    margin: 12px 0;
+  }
+
+  .icon-title {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+
+  #about-skills-tools ul {
+    padding: 24px 0;
+    margin: 0;
+  }
+
+  #about-skills-tools ul>li {
+    list-style-type: none;
+    text-align: left;
+  }
+
+  /* --------------------PATCH PROJECT styling-------------------- */
+  /* -----------INTRO---------- */
+  #work-patch-intro {
+    margin-top: 80px;
+  }
+
+  #work-patch-intro h2 {
+    text-align: left;
+  }
+
+  #work-patch-intro p {
+    text-align: left;
+  }
+
+  .patch-cover-image {
+    width: 700px;
+  }
+
+  .project-description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 48px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+
+  .icon-title {
+    align-items: center;
+  }
+
+  .myprocess {
+    margin-bottom: 80px;
+  }
+
+  /* -----------EMPATHISE---------- */
+  #process-step-title {
+    background-color: #F0694F;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: left;
+    justify-content: start;
+    width: 350px;
+    padding-left: 24px;
+    margin-bottom: 16px;
+    margin-top: 60px;
+    position: relative;
+  }
+
+  #process-step-title h2 {
+    margin: 0;
+    padding: 8px 0;
+  }
+
+  .row-interview {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-column-gap: 16px
+  }
+
+  .research-interviews {
+    margin-top: -40px;
+    padding-top: 60px;
+  }
+
+  .investigate {
+    margin-bottom: 40px;
+  }
+
+  .interview {
+    margin-bottom: 40px;
+  }
+
+  .grid-container-quotes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 40px;
+  }
+
+  .grid-item-quote1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .grid-item-quote2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .grid-item-quote3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .grid-item-quote4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .grid-item-quote5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .grid-item-quote6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .quotes {
+    padding-top: 40px;
+  }
+
+  .row-personas {
+    display: flex;
+    grid-column-gap: 40px;
+  }
+
+  .column-personas {
+    display: flex;
+    border-radius: 8px;
+  }
+
+  #work-patch-empathise {
+    margin-bottom: 120px;
+  }
+
+  /* -----------DEFINE---------- */
+  #user-flow-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .space {
+    background-color: #FEF3F1;
+    height: 50px;
+    margin-top: -60px;
+  }
+
+  .user-flow-title {
+    background-color: #FEF3F1;
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+  }
+
+  .persona-profile {
+    width: 100px;
+    margin-right: 20px;
+  }
+
+  .user-flow-column {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .img-user-flow {
+    width: 800px;
+    padding-left: 16px;
+  }
+
+  .sitemap {
+    margin-top: 100px;
+    margin-bottom: 120px;
+  }
+
+  /* -----------IDEATE---------- */
+  #ideate-title {
+    background-color: #FEF3F1;
+    display: flex;
+  }
+
+  #ideate-title h3 {
+    margin: 8px 0;
+    text-align: left;
+  }
+
+  #ideate-title p {
+    margin: 8px 0;
+    text-align: left;
+  }
+
+  .ideate-title {
+    background-color: #FEF3F1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+  }
+
+  .grid-container {}
+
+  /* -----------PROTOTYPE---------- */
+  #work-patch-prototype {
+    margin-bottom: 120px;
+  }
+
+  #prototype-title {
+    background-color: #FEF3F1;
+    display: flex;
+  }
+
+  #prototype-title h3 {
+    margin: 8px 0;
+    text-align: left;
+  }
+
+  #prototype-title p {
+    margin: 8px 0;
+    text-align: left;
+  }
+
+  .prototype-title {
+    background-color: #FEF3F1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+  }
+
+  .prototype-text {
+    margin-bottom: 40px;
+  }
+
+  .wireframe-prototype {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .figma-prototype {
+    display: flex;
+    box-shadow: 1px 1px 24px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+  }
+
+  /* -----------TEST---------- */
+  .usability-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+  }
+
+  #usability-tests {
+    padding-bottom: 60px;
+    margin-bottom: 80px;
+  }
+
+  /* -----------ITERATE & REFINE---------- */
+  #iterate-title {
+    background-color: #FEF3F1;
+    display: flex;
+  }
+
+  #iterate-title h3 {
+    margin: 8px 0;
+    text-align: left;
+  }
+
+  #iterate-title p {
+    margin: 8px 0;
+    text-align: left;
+  }
+
+  .iterate-title {
+    background-color: #FEF3F1;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 0;
+  }
+
+  .amendment-title {
+    margin: 0;
+  }
+
+  .amendment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+
+  .amendment-2 {
+    display: flex;
+    align-items: center;
+  }
+
+  #text-2 {
+    width: 600px;
+    padding-left: 30px;
+  }
+
+  #text-2 h4 {
+    text-align: left;
+  }
+
+  #text-2 p {
+    text-align: left;
+  }
+
+  /* -----------FINAL PRESENTATION---------- */
+  #final-wireframe {
+    background-color: #FEF3F1;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+
+  .grid-final-wireframes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 24px 16px;
+  }
+
+  #final-wireframe h3 {
+    margin: 0;
+    margin-bottom: 4px;
+  }
+
+  #final-wireframe p {
+    margin: 0;
+  }
+
+  .final-text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  #final-pres {
+    padding-top: 60px;
+  }
+
+  #final-pres h3 {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  #final-pres p {
+    margin: 0
+  }
+}
+
+/* ==============================================================================
   X-large devices (1440px or larger)
-  ================================= */
+  ================================================================================= */
 @media only screen and (min-width: 1440px) {}
