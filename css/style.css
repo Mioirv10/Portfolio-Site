@@ -420,7 +420,37 @@ hr {
 
 .grid-container-quotes {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-item-quote1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-item-quote2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.grid-item-quote3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-item-quote4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.grid-item-quote5 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.grid-item-quote6 {
+  grid-column-start: 2;
+  grid-column-end: 3;
 }
 
 .personas {
