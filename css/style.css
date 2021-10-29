@@ -858,6 +858,18 @@ Medium devices (640px and larger)
     grid-row-gap: 60px;
   }
 
+  .row-personas {
+    padding: 0 60px;
+  }
+
+  .personas {
+    margin-bottom: 60px;
+  }
+
+  #work-patch-empathise {
+    margin-bottom: 60px;
+  }
+
   /* -----------Define--------- */
   #user-flow-title {
     background-color: #FEF3F1;
