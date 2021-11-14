@@ -7,6 +7,10 @@ function menuToggle() {
   }
 }
 
+$("navtoggle").click(function(){
+  $(".navtoggle.responsive nav").slideToggle();
+});
+
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
