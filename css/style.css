@@ -89,7 +89,7 @@ header {
   margin-right: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: flex;
   justify-content: center;
   padding: 10px 0;
@@ -100,7 +100,7 @@ header {
   padding: 16px 0 0;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -723,6 +723,98 @@ hr {
   margin-bottom: 40px;
 }
 
+/* --------------------IFS styling-------------------- */
+/* --Discovery--- */
+#ifs-discovery {
+  margin-top: 80px;
+  Padding: 0;
+}
+
+#ifs-discovery h3 {
+  text-align: center;
+}
+
+.ifs-discovery-text {
+  padding-bottom: 24px;
+}
+
+/* --Logo--- */
+#ifs-sketches {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#ifs-sketches h3, p {
+  text-align: center;
+}
+
+#ifs-logo {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.ifs-logo-exploration {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.logo-lockups-grid {
+  padding: 20px 40px;
+}
+
+.logo-lockups-row {
+  padding-bottom: 20px;
+}
+
+/* --Brand Guidelines--- */
+#ifs-brand-guidelines h3, p {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#ifs-brand-guidelines-image {
+  margin-bottom: 40px;
+}
+
+/* --Website--- */
+#ifs-website-mobile p, h3 {
+  text-align: center;
+}
+
+#ifs-website-mobile {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.ifs-website-row {
+  padding: 0;
+  margin: 0;
+}
+
+.ifs-website-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.ifs-website-mobile-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ifs-website-mobile-row {
+  padding: 10px 20px;
+}
+
+#ifs-website-mobile {
+  background-color: #26EAB1;
+  padding: 40px 40px;
+}
+
+#ifs-closing {
+  padding: 20px 40px;
+}
+
 /* ==============================================================================
 Medium devices (640px and larger)
 ================================================================================= */
@@ -765,12 +857,12 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+    display: inline-block;
+  }
 
   .navtoggle li:last-child {
-  display: none;
-}
+    display: none;
+  }
 
   nav {
     width: auto;
@@ -778,11 +870,9 @@ Medium devices (640px and larger)
     margin-top: 18px;
   }
 
-  nav > ul > li {
-  display: inline-block;
-}
-
-
+  nav>ul>li {
+    display: inline-block;
+  }
 
   /* --------------------HOME PAGE styling-------------------- */
   /* -----------home intro---------- */
@@ -1096,6 +1186,85 @@ Medium devices (640px and larger)
   #final-pres p {
     margin: 0
   }
+
+  /* --------------------IFS styling-------------------- */
+  /* --Logo--- */
+  .ifs-sketches {
+    display: flex;
+    align-items: center;
+  }
+
+  #ifs-sketches h3 {
+    text-align: left;
+  }
+
+  #ifs-sketches p {
+    text-align: left;
+  }
+
+  .ifs-sketches-text {
+    width: 600px;
+  }
+
+  #ifs-logo {
+    margin-top: 60px;
+  }
+
+  #ifs-logo h3, p {
+    text-align: center;
+  }
+
+  .ifs-logo-exploration {
+    margin-bottom: 80px;
+  }
+
+  .logo-lockups-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    margin-bottom: 60px;
+  }
+
+  .logo-lockups-item1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .logo-lockups-item2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .logo-lockups-item3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .logo-lockups-item4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  /* --Brand Guidelines--- */
+  /* --Website--- */
+  .ifs-website-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ifs-website-mobile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #ifs-closing {
+    display: flex;
+    justify-content: center;
+  }
+
+  #ifs-closing img {
+    width: 300px;
+  }
 }
 
 /* ==============================================================================
@@ -1397,7 +1566,6 @@ Medium devices (640px and larger)
   }
 
   /* -----------DEFINE---------- */
-
   #user-flow-title {
     display: flex;
     padding-top: 20px;
@@ -1628,6 +1796,104 @@ Medium devices (640px and larger)
 
   #final-pres p {
     margin: 0
+  }
+
+  /* --------------------IFS styling-------------------- */
+  /* --Intro--- */
+  .ifs-cover-image {
+    width: 700px;
+  }
+
+  .ifs-website-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #ifs-discovery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #ifs-discovery p {
+    text-align: center;
+    width: 800px;
+  }
+
+#ifs-logo {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#ifs-logo h3 {
+  margin:0;
+  padding-bottom: 20px;
+}
+
+#ifs-logo p {
+  margin:0;
+}
+
+.ifs-logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+}
+
+  #ifs-logo-generation {
+    margin-bottom: 100px;
+  }
+
+  .ifs-logo-exploration {
+    margin-bottom:100px;
+        margin-top: 60px;
+  }
+
+  #ifs-brand-guidelines {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+    #ifs-brand-guidelines h3 {
+    margin: 0;
+    padding-bottom: 20px;
+    }
+
+    #ifs-brand-guidelines p {
+margin: 0;
+    }
+
+  #ifs-brand-guidelines-image {
+    margin-bottom: 60px;
+  }
+
+  #ifs-brand-guidelines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #ifs-website {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ifs-website-mobile-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .logo-lockups-grid {
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin-top: 60px;
   }
 }
 
