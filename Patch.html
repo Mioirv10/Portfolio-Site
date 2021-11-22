@@ -16,19 +16,21 @@
 
 <body class="home" id="home">
   <header>
-    <div class="container">
-      <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html"><img src="Img/Home/Mio-logo-mark.png" class="logo"></a>
-        <nav id="toggle">
-          <ul class="navigation">
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"> <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
-                  <path d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z" />
-                </svg></a></li>
-          </ul>
-        </nav>
+    <div id="navbar">
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html"><img src="Img/Home/Mio-logo-mark.png" class="logo"></a>
+          <nav id="toggle">
+            <ul class="navigation">
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"> <svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                    <path d="M 0 2 L 0 4 L 24 4 L 24 2 Z M 0 11 L 0 13 L 24 13 L 24 11 Z M 0 20 L 0 22 L 24 22 L 24 20 Z" />
+                  </svg></a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -242,7 +244,7 @@
 
     <div class="container">
       <div class="user-flow-column">
-        <div class="user-flow-row">
+        <div class="user-flow-row1">
           <div>
             <h4>Entry Point</h4>
             <p>The entry point for Tamara is downloading and creating an account on the app.</p>
@@ -271,8 +273,8 @@
                 </ol>
           </div>
         </div>
-        <div class="user-flow-row">
-          <img src="Img/Patch/21_TamaraUserflow.jpg" alt="userflow-tamara" class="img-user-flow">
+        <div class="user-flow-row2">
+          <img src="Img/Patch/21_TamaraUserflow.jpg" alt="userflow-tamara" class="img-user-flow" width="660" height="auto">
         </div>
       </div>
     </div>
@@ -291,7 +293,7 @@
 
     <div class="container">
       <div class="user-flow-column">
-        <div class="user-flow-row">
+        <div class="user-flow-row1">
           <div>
             <h3>Entry Point</h3>
             <p>The entry point for Lorraine is downloading and creating an account on the app.</p>
@@ -320,7 +322,7 @@
                 </ol>
           </div>
         </div>
-        <div class="user-flow-row">
+        <div class="user-flow-row2">
           <img src="Img/Patch/23_Lorraineuserflow.png" alt="userflow-Lorraine" height="500px">
         </div>
       </div>
@@ -672,24 +674,24 @@
 
     <div class="container">
       <div id="final-pres">
-      <div>
-        <h3>Responsive Design</h3>
-        <p>Changing grids across screen sizes to allow for a responsive app</p>
+        <div>
+          <h3>Responsive Design</h3>
+          <p>Changing grids across screen sizes to allow for a responsive app</p>
+        </div>
+        <picture>
+          <source srcset="Img/Patch/59_responsive-grid_400px.png" media="(max-width:767px)">
+          <img src="Img/Patch/59_responsive-grid_800px.png" alt="My Image" height="600px">
+        </picture>
+        <picture>
+          <source srcset="Img/Patch/60_Mockup-phone-web_400px.png" media="(max-width:767px)">
+          <img src="Img/Patch/60_Mockup-phone-web_800px.png" alt="My Image" height="600px">
+        </picture>
+        <picture>
+          <source srcset="Img/Patch/61_mockup-phone-web2_400px.png" media="(max-width:767px)">
+          <img src="Img/Patch/61_mockup-phone-web2_800px.png" alt="My Image" height="600px">
+        </picture>
       </div>
-      <picture>
-        <source srcset="Img/Patch/59_responsive-grid_400px.png" media="(max-width:767px)">
-        <img src="Img/Patch/59_responsive-grid_800px.png" alt="My Image" height="600px">
-      </picture>
-      <picture>
-        <source srcset="Img/Patch/60_Mockup-phone-web_400px.png" media="(max-width:767px)">
-        <img src="Img/Patch/60_Mockup-phone-web_800px.png" alt="My Image" height="600px">
-      </picture>
-      <picture>
-        <source srcset="Img/Patch/61_mockup-phone-web2_400px.png" media="(max-width:767px)">
-        <img src="Img/Patch/61_mockup-phone-web2_800px.png" alt="My Image" height="600px">
-      </picture>
     </div>
-  </div>
   </div>
 
   <!-- Footer  -->
@@ -707,16 +709,16 @@
       </div>
       <div class="socials">
         <!--Social Media links-->
-        <a href="#" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-instagram"></a>
-        <a href="#" class="fa fa-etsy"></a>
+        <a href="https://www.linkedin.com/in/mio-irving-79742b145/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/flyingcolourscrafts/" target="_blank" class="fa fa-instagram"></a>
+        <a href="https://www.etsy.com/shop/flyingcolourscrafts" target="_blank" class="fa fa-etsy"></a>
       </div>
       <div class="copyright">
         <p>Copyright Mio Irving 2021-2022</p>
       </div>
     </div>
   </footer>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 

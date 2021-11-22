@@ -73,6 +73,21 @@ header {
   padding: 10px 0;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+#navbar.sticky+.content {
+  padding-top: 60px;
+}
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -311,7 +326,12 @@ hr {
 
 #about-skills-tools ul>li {
   list-style-type: none;
+}
+
+#about-skills-tools ul>li>p {
   text-align: center;
+  margin: 0;
+  Padding: 10px;
 }
 
 .skills {
@@ -768,20 +788,11 @@ hr {
 }
 
 /* --Brand Guidelines--- */
-#ifs-brand-guidelines h3, p {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
 #ifs-brand-guidelines-image {
   margin-bottom: 40px;
 }
 
 /* --Website--- */
-#ifs-website-mobile p, h3 {
-  text-align: center;
-}
-
 #ifs-website-mobile {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -940,6 +951,12 @@ Medium devices (640px and larger)
     padding-bottom: 40px;
   }
 
+  #about-skills-tools ul>li>p {
+    text-align: center;
+    margin: 0;
+    Padding: 10px;
+  }
+
   .tools {
     padding-bottom: 60px;
   }
@@ -1029,6 +1046,11 @@ Medium devices (640px and larger)
     display: flex;
     align-items: center;
   }
+
+  #work-patch-define p {
+    text-align: left;
+  }
+
 
   /* -----------Ideate--------- */
   #ideate-title {
@@ -1411,6 +1433,12 @@ Medium devices (640px and larger)
     width: 28px
   }
 
+  #about-skills-tools ul>li>p {
+    text-align: left;
+    margin: 0;
+    Padding: 10px;
+  }
+
   .tools {
     display: flex;
     flex-direction: column;
@@ -1507,6 +1535,12 @@ Medium devices (640px and larger)
     margin-bottom: 40px;
   }
 
+  #work-patch-empathise p {
+    text-align: left;
+    margin: 0;
+    padding: 5px;
+  }
+
   .interview {
     margin-bottom: 40px;
   }
@@ -1597,16 +1631,23 @@ Medium devices (640px and larger)
   }
 
   .user-flow-column {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin-top: 40px;
-    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+padding: 40px 0;
   }
 
-  .img-user-flow {
-    width: 800px;
-    padding-left: 16px;
+  .user-flow-row1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .user-flow-row2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  #work-patch-define p {
+    text-align: left;
   }
 
   .sitemap {
@@ -1820,52 +1861,43 @@ Medium devices (640px and larger)
     width: 800px;
   }
 
-#ifs-logo {
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  #ifs-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-#ifs-logo h3 {
-  margin:0;
-  padding-bottom: 20px;
-}
+  #ifs-logo h3 {
+    margin: 0;
+    padding-bottom: 20px;
+  }
 
-#ifs-logo p {
-  margin:0;
-}
+  #ifs-logo p {
+    margin: 0;
+  }
 
-.ifs-logo-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 800px;
-}
+  .ifs-logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+  }
 
   #ifs-logo-generation {
     margin-bottom: 100px;
   }
 
   .ifs-logo-exploration {
-    margin-bottom:100px;
-        margin-top: 60px;
+    margin-bottom: 100px;
+    margin-top: 60px;
   }
 
   #ifs-brand-guidelines {
     margin-top: 40px;
     margin-bottom: 60px;
   }
-
-    #ifs-brand-guidelines h3 {
-    margin: 0;
-    padding-bottom: 20px;
-    }
-
-    #ifs-brand-guidelines p {
-margin: 0;
-    }
 
   #ifs-brand-guidelines-image {
     margin-bottom: 60px;
