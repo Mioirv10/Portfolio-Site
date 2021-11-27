@@ -750,22 +750,15 @@ hr {
   Padding: 0;
 }
 
-#ifs-discovery h3 {
-  text-align: center;
-}
-
 .ifs-discovery-text {
   padding-bottom: 24px;
+  text-align: center;
 }
 
 /* --Logo--- */
 #ifs-sketches {
   margin-top: 60px;
   margin-bottom: 60px;
-}
-
-#ifs-sketches h3, p {
-  text-align: center;
 }
 
 #ifs-logo {
@@ -780,16 +773,17 @@ hr {
 }
 
 .logo-lockups-grid {
-  padding: 20px 40px;
-}
-
-.logo-lockups-row {
-  padding-bottom: 20px;
+  padding: 10px 40px;
 }
 
 /* --Brand Guidelines--- */
 #ifs-brand-guidelines-image {
   margin-bottom: 40px;
+}
+
+.ifs-logo-text {
+text-align: center;
+margin-bottom: 40px;
 }
 
 /* --Website--- */
@@ -1051,7 +1045,6 @@ Medium devices (640px and larger)
     text-align: left;
   }
 
-
   /* -----------Ideate--------- */
   #ideate-title {
     background-color: #FEF3F1;
@@ -1216,24 +1209,12 @@ Medium devices (640px and larger)
     align-items: center;
   }
 
-  #ifs-sketches h3 {
-    text-align: left;
-  }
-
-  #ifs-sketches p {
-    text-align: left;
-  }
-
   .ifs-sketches-text {
     width: 600px;
   }
 
   #ifs-logo {
     margin-top: 60px;
-  }
-
-  #ifs-logo h3, p {
-    text-align: center;
   }
 
   .ifs-logo-exploration {
@@ -1538,7 +1519,7 @@ Medium devices (640px and larger)
   #work-patch-empathise p {
     text-align: left;
     margin: 0;
-    padding: 5px;
+    padding-right: 100px;
   }
 
   .interview {
@@ -1548,7 +1529,7 @@ Medium devices (640px and larger)
   .grid-container-quotes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 40px;
+    padding: 40px 40px;
   }
 
   .grid-item-quote1 {
@@ -1599,6 +1580,10 @@ Medium devices (640px and larger)
     margin-bottom: 120px;
   }
 
+  .row-comp-an {
+    margin-top: 40px;
+  }
+
   /* -----------DEFINE---------- */
   #user-flow-title {
     display: flex;
@@ -1625,6 +1610,15 @@ Medium devices (640px and larger)
     padding: 0;
   }
 
+  #user-flow-column li p {
+    margin: 0;
+    padding-left: 4px;
+  }
+
+  #user-flow-column ol {
+    padding-left: 20px;
+  }
+
   .persona-profile {
     width: 100px;
     margin: 0;
@@ -1633,7 +1627,8 @@ Medium devices (640px and larger)
   .user-flow-column {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-padding: 40px 0;
+    padding: 40px 0;
+    align-content: center;
   }
 
   .user-flow-row1 {
@@ -1642,12 +1637,16 @@ padding: 40px 0;
   }
 
   .user-flow-row2 {
+    display: flex;
     grid-column-start: 2;
     grid-column-end: 4;
+    align-items: center;
+    justify-content: center;
   }
 
   #work-patch-define p {
     text-align: left;
+    padding-right: 100px;
   }
 
   .sitemap {
@@ -1682,8 +1681,6 @@ padding: 40px 0;
     padding: 40px 0;
   }
 
-  .grid-container {}
-
   /* -----------PROTOTYPE---------- */
   #work-patch-prototype {
     margin-bottom: 120px;
@@ -1716,7 +1713,7 @@ padding: 40px 0;
   }
 
   .prototype-text {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   .wireframe-prototype {
@@ -1779,6 +1776,7 @@ padding: 40px 0;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 40px;
     margin-bottom: 100px;
+    text-align: center;
   }
 
   .amendment-2 {
@@ -1788,15 +1786,15 @@ padding: 40px 0;
 
   #text-2 {
     width: 600px;
-    padding-left: 30px;
+  text-align: center;
   }
 
   #text-2 h4 {
-    text-align: left;
+    text-align: center;
   }
 
   #text-2 p {
-    text-align: left;
+    text-align: center;
   }
 
   /* -----------FINAL PRESENTATION---------- */
